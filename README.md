@@ -11,7 +11,7 @@ Este projeto é uma aplicação de cadastro de séries conteinerizada com Docker
 
 *   **Como subir o ambiente:** Execute `docker compose up -d --build` na raiz do projeto.
 *   **Como parar o ambiente:** Execute `docker compose down`.
-*   **Como apagar volumes:** Execute `docker compose down -v` (Isso apagará o banco de dados e todos os dados salvos) ou de forma mais controlada use `docker volumes ls` para listar os volumes e `docker volumes rm <volume>` para remover um volume específico.
+*   **Como apagar volumes:** Execute `docker compose down -v` (Isso apagará o banco de dados e todos os dados salvos) ou de forma mais controlada use `docker volume ls` para listar os volumes e `docker volume rm <volume>` para remover um volume específico.
 *   **Como acessar o frontend:** Abra o navegador e acesse `http://localhost` (ou o IP da vm).
 *   **Como testar a API internamente:** Acesse a documentação interativa do FastAPI através de `http://localhost:8000` (a porta 8000 deve ser mapeada no serviço "api" do arquivo docker compose).
 *   **Como ver logs:** Execute `docker compose logs` para ver de todos os serviços, ou `docker compose logs [nome-do-serviço]` (ex: `docker compose logs api`) para ver de um container específico.
